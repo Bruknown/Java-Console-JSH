@@ -30,7 +30,7 @@ public class ComandoPrompt
     }
     
     /**
-     * MÃ©todo acessor get para o nome do comando.
+     * Método acessor get para o nome do comando.
      * 
      * @return o nome do comando, exatamente como foi entrado.
      */
@@ -45,9 +45,9 @@ public class ComandoPrompt
     }
     
     /**
-     * MÃ©todo acessor get para os argumentos que seguram ao nome do comando.
+     * Método acessor get para os argumentos que seguram ao nome do comando.
      * 
-     * @return Lista de argumentos do comando, protegida contra modificaÃ§Ãµes externas.
+     * @return Lista de argumentos do comando, protegida contra modificações externas.
      */
     public List<String> getArgumentos() 
     {
