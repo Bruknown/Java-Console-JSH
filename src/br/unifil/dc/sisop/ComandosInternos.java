@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
  */
 public final class ComandosInternos {
 	
-	static String currentPath = (System.getProperty("user.dir") + "\\home\\shared");
+	static String currentPath = (System.getProperty("user.dir") + "\\src\\home\\shared");
     
     public static int exibirRelogio() {
 
@@ -39,13 +39,13 @@ public final class ComandosInternos {
     }
     
     public static int criarNovoDiretorio(String nomeDir) {
-    	File f = new File(currentPath + "/" + nomeDir);
+    	File f = new File(currentPath + "\\" + nomeDir);
     	f.mkdir();
     	return 1;
     }
     
     public static int apagarDiretorio(String nomeDir) {
-    	File f = new File(currentPath + "/" + nomeDir);
+    	File f = new File(currentPath + "\\" + nomeDir);
     	if(f.exists())
     	{
     		f.delete();
@@ -61,7 +61,9 @@ public final class ComandosInternos {
     	{
     		currentPath = currentPath.substring(0, currentPath.lastIndexOf("\\"));
     	}
-        currentPath += ("/" + nomeDir);
+    	else {
+    		currentPath += ("\\" + nomeDir);
+    	}
         return 1;
     }
     

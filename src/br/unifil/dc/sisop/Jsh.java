@@ -3,7 +3,7 @@ package br.unifil.dc.sisop;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
+//import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
@@ -26,7 +26,7 @@ public final class Jsh
 
         while (rodando == 1) {
     		exibirPrompt();
-    		ComandoPrompt comandoEntrado = lerComando();
+ComandoPrompt comandoEntrado = lerComando();
     		executarComando(comandoEntrado);
     	}
     }
