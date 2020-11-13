@@ -1,4 +1,4 @@
-package br.unifil.dc.sisop;
+package main;
 
 import java.util.List;
 import java.util.Arrays;
@@ -30,7 +30,7 @@ public class ComandoPrompt
     }
     
     /**
-     * Método acessor get para o nome do comando.
+     * Mï¿½todo acessor get para o nome do comando.
      * 
      * @return o nome do comando, exatamente como foi entrado.
      */
@@ -45,9 +45,9 @@ public class ComandoPrompt
     }
     
     /**
-     * Método acessor get para os argumentos que seguram ao nome do comando.
+     * Mï¿½todo acessor get para os argumentos que seguram ao nome do comando.
      * 
-     * @return Lista de argumentos do comando, protegida contra modificações externas.
+     * @return Lista de argumentos do comando, protegida contra modificaï¿½ï¿½es externas.
      */
     public List<String> getArgumentos() 
     {

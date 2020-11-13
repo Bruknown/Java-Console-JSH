@@ -1,9 +1,8 @@
-package br.unifil.dc.sisop;
+package main;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-//import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
@@ -124,7 +123,7 @@ ComandoPrompt comandoEntrado = lerComando();
                 
             }
             catch(FileNotFoundException ex) {
-                System.out.println("não é possivel abrir o file: " + fileName + "");                
+                System.out.println("nï¿½o ï¿½ possivel abrir o file: " + fileName + "");                
             }
             catch(IOException ex) {
                 System.out.println("erro ao ler o file: " + fileName + "");                  
@@ -132,7 +131,7 @@ ComandoPrompt comandoEntrado = lerComando();
             }
     		return 1;
     	}
-    	System.out.println("comando ou file não existente");
+    	System.out.println("comando ou file nï¿½o existente");
     	return 1;
     }
     
